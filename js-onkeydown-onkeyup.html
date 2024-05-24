@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript events</title>
+</head>
+<body>
+<h1>KEY EVENTS</h1>    
+<h3>KEY UP EVENT</h3>
+<label for="name">Enter Name :</label>
+<input type="text" id="name" name="name" onkeyup="keyup()">
+<script>
+    function keyup()
+    {
+        let name=document.getElementById("name");
+        name.value=name.value.toUpperCase();
+    }
+</script>
+<br><br>
+<h3>KEY DOWN EVENT</h3>
+<label for="city">City Name :</label>
+<input type="text" id="city" onkeydown="keydown()">
+<script>
+    function keydown()
+    {
+        let city=document.getElementById("city");
+        city.value=city.value.toUpperCase();
+    }
+</script>
+</body>
+</html>
